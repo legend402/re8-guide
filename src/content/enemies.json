@@ -1,0 +1,69 @@
+[
+  {
+    "id": "lycan",
+    "name": "Lycan",
+    "category": "普通敌人",
+    "description": "受Cadou寄生虫感染的狼人生物，是村庄中最常见的敌人。速度快，攻击性强，常成群出现。",
+    "weaknesses": ["头部射击", "爆炸物"],
+    "location": "村庄区域",
+    "strategy": "瞄准头部可造成暴击伤害。利用爆炸桶或手雷可快速清理群体。"
+  },
+  {
+    "id": "moroaica",
+    "name": "Moroaica",
+    "category": "普通敌人",
+    "description": "城堡中的女性吸血鬼生物，行动敏捷，擅长近战攻击。",
+    "weaknesses": ["头部射击"],
+    "location": "城堡 Dimitrescu",
+    "strategy": "保持移动，避免被包围。使用霰弹枪或手枪爆头。"
+  },
+  {
+    "id": "soldat",
+    "name": "Soldat Eins",
+    "category": "普通敌人",
+    "description": "海森伯格工厂中的半机械士兵，配备有机植入物和机械增强。",
+    "weaknesses": ["头部射击", "背部散热器"],
+    "location": "海森伯格工厂",
+    "strategy": "攻击背部的红色散热器可造成额外伤害。部分型号需要躲避冲刺攻击。"
+  },
+  {
+    "id": "dimitrescu",
+    "name": "迪米特雷斯库夫人",
+    "category": "Boss",
+    "description": "四大贵族之一的吸血鬼夫人，拥有超人的力量和再生能力。",
+    "weaknesses": ["狙击步枪", "城堡外的寒冷"],
+    "location": "城堡 Dimitrescu 塔楼",
+    "strategy": "第一阶段躲避追击，利用城堡结构周旋。最终战在塔楼顶部，使用狙击步枪射击头部。注意她的冲锋攻击。",
+    "rewards": ["Crystal Dimitrescu", "25,000 Lei"]
+  },
+  {
+    "id": "moreau-boss",
+    "name": "莫罗",
+    "category": "Boss",
+    "description": "变异成巨大鱼形怪物的四大贵族，能在水中快速移动并喷射酸液。",
+    "weaknesses": ["爆炸物", "嘴部"],
+    "location": "莫罗水库",
+    "strategy": "利用地雷和手雷打断他的攻击。当他张开嘴时集中火力射击。保持移动避免酸液攻击。",
+    "rewards": ["Crystal Moreau", "30,000 Lei"]
+  },
+  {
+    "id": "heisenberg-boss",
+    "name": "海森伯格",
+    "category": "Boss",
+    "description": "操控磁场的工程师，驾驶着巨型机械怪物与你战斗。",
+    "weaknesses": ["坦克炮", "背部弱点"],
+    "location": "海森伯格工厂",
+    "strategy": "使用提供的坦克装甲车，利用磁力炮攻击他暴露在外的红色弱点区域。躲避他的锯片和磁场攻击。",
+    "rewards": ["Crystal Heisenberg", "35,000 Lei"]
+  },
+  {
+    "id": "miranda",
+    "name": "米兰达母亲",
+    "category": "最终Boss",
+    "description": "游戏最终Boss，能够变换多种形态的强大敌人。",
+    "weaknesses": ["所有武器", "闪光弹"],
+    "location": "仪式地点",
+    "strategy": "多阶段战斗，每阶段变换形态。使用所有可用弹药，当房间变暗时使用闪光弹。最终阶段克里斯会提供支援。",
+    "rewards": ["通关", "奖励武器解锁"]
+  }
+]

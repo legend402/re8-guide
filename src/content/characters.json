@@ -1,0 +1,88 @@
+[
+  {
+    "id": "ethan-winters",
+    "name": "伊森·温特斯",
+    "nameEn": "Ethan Winters",
+    "role": "主角",
+    "description": "《生化危机7》和《生化危机8》的主角，米娅的丈夫，罗斯的父亲。为了寻找被绑架的女儿而来到村庄。",
+    "image": "/images/characters/ethan.jpg",
+    "status": "主角",
+    "appearsIn": ["生化危机7", "生化危机8"]
+  },
+  {
+    "id": "chris-redfield",
+    "name": "克里斯·雷德菲尔德",
+    "nameEn": "Chris Redfield",
+    "role": "配角",
+    "description": "BSAA资深成员，曾在《生化危机7》结尾出现。在RE8开头袭击了伊森的家，看似反派实则另有隐情。",
+    "image": "/images/characters/chris.jpg",
+    "status": "配角",
+    "appearsIn": ["生化危机8"]
+  },
+  {
+    "id": "lady-dimitrescu",
+    "name": "阿尔西娜·迪米特雷斯库",
+    "nameEn": "Alcina Dimitrescu",
+    "role": "反派",
+    "description": "身高约2.9米的吸血鬼夫人，四大贵族之一。以优雅和残忍著称，和她的三个女儿一起住在城堡中。",
+    "image": "/images/characters/dimitrescu.jpg",
+    "status": "已死亡",
+    "appearsIn": ["生化危机8"],
+    "title": "吸血鬼夫人"
+  },
+  {
+    "id": "donna-beneviento",
+    "name": "多娜·贝内文托",
+    "nameEn": "Donna Beneviento",
+    "role": "反派",
+    "description": "四大贵族之一，戴着黑色面纱的神秘女性。能够操控人偶安吉，擅长心理恐怖和幻觉攻击。",
+    "image": "/images/characters/donna.jpg",
+    "status": "已死亡",
+    "appearsIn": ["生化危机8"],
+    "title": "人偶师"
+  },
+  {
+    "id": "moreau",
+    "name": "萨尔瓦托雷·莫罗",
+    "nameEn": "Salvatore Moreau",
+    "role": "反派",
+    "description": "四大贵族之一，身体严重变异，类似两栖动物的怪物。生活在水库中，性格自卑且渴望母亲的认可。",
+    "image": "/images/characters/moreau.jpg",
+    "status": "已死亡",
+    "appearsIn": ["生化危机8"],
+    "title": "水库之主"
+  },
+  {
+    "id": "heisenberg",
+    "name": "卡尔·海森伯格",
+    "nameEn": "Karl Heisenberg",
+    "role": "反派",
+    "description": "四大贵族之一，能够操控磁场的疯狂工程师。经营着巨大的机械工厂，对米兰达母亲怀有叛意。",
+    "image": "/images/characters/heisenberg.jpg",
+    "status": "已死亡",
+    "appearsIn": ["生化危机8"],
+    "title": "工程师"
+  },
+  {
+    "id": "mother-miranda",
+    "name": "米兰达母亲",
+    "nameEn": "Mother Miranda",
+    "role": "主要反派",
+    "description": "村庄的邪教领袖，被村民当作神明崇拜。真正的幕后黑手，为了复活死去的女儿伊娃而绑架了罗斯。",
+    "image": "/images/characters/miranda.jpg",
+    "status": "已死亡",
+    "appearsIn": ["生化危机8"],
+    "title": "邪教领袖"
+  },
+  {
+    "id": "duke",
+    "name": "公爵",
+    "nameEn": "The Duke",
+    "role": "商人",
+    "description": "神秘的商人，遍布村庄各处。出售武器、道具和升级服务，体型肥胖但行动敏捷，身份成谜。",
+    "image": "/images/characters/duke.jpg",
+    "status": "存活",
+    "appearsIn": ["生化危机8"],
+    "title": "神秘商人"
+  }
+]

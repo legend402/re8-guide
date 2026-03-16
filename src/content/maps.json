@@ -1,0 +1,56 @@
+[
+  {
+    "id": "village",
+    "name": "村庄",
+    "nameEn": "The Village",
+    "description": "游戏的主要枢纽区域，连接所有其他地点。一个被雪覆盖的东欧村庄，受四大贵族统治。",
+    "areas": ["中央村庄", "教堂", "墓地", "路易莎家", "工坊"],
+    "enemies": ["Lycan", "狼人"],
+    "keyItems": ["断线钳", "钥匙"]
+  },
+  {
+    "id": "castle",
+    "name": "城堡 Dimitrescu",
+    "nameEn": "Castle Dimitrescu",
+    "description": "吸血鬼夫人阿尔西娜·迪米特雷斯库的领地。一座宏伟的哥特式城堡，充满了奢华的装饰和危险。",
+    "areas": ["主厅", "地牢", "图书馆", "军械库", "阁楼", "酒窖", "塔楼"],
+    "enemies": ["Moroaica", "Samca", "迪米特雷斯库夫人"],
+    "keyItems": ["四大家族面具", "纹章钥匙"]
+  },
+  {
+    "id": "beneviento",
+    "name": "贝内文托家",
+    "nameEn": "House Beneviento",
+    "description": "多娜·贝内文托的住所，充满了恐怖和幻觉。一个阴森的房屋，以人偶和恐怖氛围著称。",
+    "areas": ["花园", "主厅", "人偶工坊", "地下室"],
+    "enemies": ["Angie", "Baby"],
+    "keyItems": ["人偶", "银钥匙"]
+  },
+  {
+    "id": "reservoir",
+    "name": "莫罗水库",
+    "nameEn": "Moreau's Reservoir",
+    "description": "萨尔瓦托雷·莫罗的领地。被洪水淹没的区域，充满了肮脏的水域和怪异的实验。",
+    "areas": ["风车", "渔村", "莫罗实验室", "水闸"],
+    "enemies": ["莫罗", "变异鱼"],
+    "keyItems": ["曲柄", "钥匙模具"]
+  },
+  {
+    "id": "factory",
+    "name": "海森伯格工厂",
+    "nameEn": "Heisenberg's Factory",
+    "description": "卡尔·海森伯格的机械工厂。充满 Soldat 敌人和机械装置的巨大地下设施。",
+    "areas": ["入口/车库", "B1-B5层", "铸造厂", "动力室", "海森伯格房间"],
+    "enemies": ["Soldat Eins", "Soldat Zwei", "Sturm", "海森伯格"],
+    "keyItems": ["钥匙模具", "机械零件"]
+  },
+  {
+    "id": "stronghold",
+    "name": "要塞",
+    "nameEn": "The Stronghold",
+    "description": "古老的军事要塞，通往仪式地点的必经之路。充满了强大敌人和险阻。",
+    "areas": ["堡垒", "地下通道", "乌利亚斯竞技场"],
+    "enemies": ["乌利亚斯", "重装Lycan"],
+    "keyItems": ["宝藏"]
+  }
+]
