@@ -1,6 +1,6 @@
 import { Metadata } from "next"
 import Link from "next/link"
-import { ChevronRight, MapPin, Sword, Users, Trophy, Scroll, Home } from "lucide-react"
+import { ChevronRight, MapPin, Sword, Users, Trophy, Scroll, Home, Target, Shield } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "RE8 Village Guide | 生化危机8村庄攻略",
@@ -10,9 +10,30 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 px-4">
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
+      {/* Hero Section with animated background */}
+      <section className="relative py-20 lg:py-32 px-4 overflow-hidden">
+        {/* Animated gradient background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-950/30 via-background to-red-950/20" />
+        
+        {/* Animated particles/lines */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-red-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-amber-500/5 rounded-full blur-3xl" />
+        </div>
+        
+        {/* Grid pattern overlay */}
+        <div 
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage: `linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)`,
+            backgroundSize: '50px 50px'
+          }}
+        />
+        
+        {/* Fog effect */}
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+        
         <div className="relative max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
             <span className="bg-gradient-to-r from-amber-500 to-yellow-500 bg-clip-text text-transparent">

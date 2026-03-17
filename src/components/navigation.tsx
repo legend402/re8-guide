@@ -5,11 +5,25 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Search, Menu, Moon, Sun, Home, X } from "lucide-react"
 import { useTheme } from "next-themes"
+import { SearchDialog } from "./search-dialog"
 
 export function Navigation() {
   const pathname = usePathname()
   const { theme, setTheme } = useTheme()
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
+  const [searchOpen, setSearchOpen] = React.useState(false)
+
+  // Keyboard shortcut for search
+  React.useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+        e.preventDefault()
+        setSearchOpen(true)
+      }
+    }
+    document.addEventListener("keydown", handleKeyDown)
+    return () => document.removeEventListener("keydown", handleKeyDown)
+  }, [])
 
   const navigationLinks = [
     { href: "/characters", label: "角色" },
@@ -69,19 +83,23 @@ export function Navigation() {
             {/* Theme Toggle */}
             <button
               onClick={handleThemeToggle}
-              className="ml-2 p-2 rounded-md hover:bg-muted transition-colors"
+              className="relative ml-2 p-2 rounded-md hover:bg-muted transition-colors"
               aria-label="切换主题"
             >
               <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-              <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+              <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 top-2 left-2" />
             </button>
 
             {/* Search Button */}
             <button 
-              className="p-2 rounded-md hover:bg-muted transition-colors"
+              onClick={() => setSearchOpen(true)}
+              className="p-2 rounded-md hover:bg-muted transition-colors flex items-center gap-2"
               aria-label="搜索"
             >
               <Search className="h-5 w-5" />
+              <span className="hidden xl:inline text-xs text-muted-foreground border rounded px-1.5 py-0.5">
+                Ctrl K
+              </span>
             </button>
           </div>
 
@@ -89,11 +107,11 @@ export function Navigation() {
           <div className="flex lg:hidden items-center gap-2">
             <button
               onClick={handleThemeToggle}
-              className="p-2 rounded-md hover:bg-muted transition-colors"
+              className="relative p-2 rounded-md hover:bg-muted transition-colors"
               aria-label="切换主题"
             >
               <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-              <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+              <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 top-2 left-2" />
             </button>
             <button
               onClick={() => setMobileMenuOpen(true)}
@@ -151,7 +169,10 @@ export function Navigation() {
               
               <div className="pt-4 mt-4 border-t">
                 <button
-                  onClick={() => setMobileMenuOpen(false)}
+                  onClick={() => {
+                    setMobileMenuOpen(false)
+                    setSearchOpen(true)
+                  }}
                   className="flex items-center gap-3 px-4 py-3 text-base font-medium w-full rounded-md hover:bg-muted transition-colors"
                 >
                   <Search className="h-5 w-5" />
@@ -162,6 +183,9 @@ export function Navigation() {
           </div>
         </div>
       )}
+
+      {/* Search Dialog */}
+      <SearchDialog open={searchOpen} onOpenChange={setSearchOpen} />
     </>
   )
 }

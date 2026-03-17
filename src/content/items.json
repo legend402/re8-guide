@@ -1,0 +1,56 @@
+{
+  "craftingRecipes": [
+    { "name": "急救药品", "effect": "恢复生命值", "materials": "药草 + 化学液体", "icon": "Heart", "color": "green" },
+    { "name": "手枪弹药 (15发)", "effect": "手枪子弹", "materials": "2×火药 + 2×生锈零件", "icon": "Crosshair", "color": "blue" },
+    { "name": "霰弹枪弹药 (3发)", "effect": "霰弹枪子弹", "materials": "1×火药 + 1×生锈零件 + 1×液体药品", "icon": "Crosshair", "color": "red" },
+    { "name": "狙击枪弹药 (5发)", "effect": "狙击枪子弹", "materials": "2×火药 + 2×生锈零件 + 1×液体药品", "icon": "Crosshair", "color": "emerald" },
+    { "name": "麦林弹药 (3发)", "effect": "马格南子弹", "materials": "1×高级火药 + 1×生锈零件 + 2×液体药品", "icon": "Crosshair", "color": "purple" },
+    { "name": "突击步枪弹药 (40发)", "effect": "步枪子弹", "materials": "3×火药 + 2×生锈零件", "icon": "Crosshair", "color": "orange" },
+    { "name": "榴弹 (2发)", "effect": "榴弹发射器弹药", "materials": "1×高级火药 + 1×生锈零件 + 1×金属废料", "icon": "Bomb", "color": "amber" },
+    { "name": "地雷 (2发)", "effect": "爆炸陷阱", "materials": "1×高级火药 + 2×生锈零件", "icon": "Bomb", "color": "red" },
+    { "name": "管状炸弹 (2发)", "effect": "投掷炸弹", "materials": "2×高级火药 + 1×金属废料", "icon": "Bomb", "color": "orange" },
+    { "name": "闪光弹 (2发)", "effect": "致盲敌人", "materials": "1×高级火药 + 1×生锈零件 + 1×液体药品", "icon": "Sparkles", "color": "yellow" },
+    { "name": "燃烧弹 (2发)", "effect": "火焰伤害", "materials": "1×高级火药 + 1×生锈零件 + 1×液体药品", "icon": "Flame", "color": "orange" }
+  ],
+  "keyItems": [
+    { "name": "断线钳", "description": "切断链条和铁丝网", "location": "村庄 - 教堂旁房屋", "icon": "Key" },
+    { "name": "螺丝刀", "description": "拆卸螺丝，打开特定箱子", "location": "路易莎家", "icon": "Key" },
+    { "name": "少女石雕", "description": "组合恶魔石雕打开墓地大门", "location": "教堂", "icon": "Key" },
+    { "name": "恶魔石雕", "description": "组合少女石雕打开墓地大门", "location": "路易莎家", "icon": "Key" },
+    { "name": "四翼胎儿钥匙", "description": "进入贝内文托家和水库", "location": "红色烟囱房屋", "icon": "Key" },
+    { "name": "六翼胎儿钥匙", "description": "进入工厂", "location": "水库完成后的祭坛", "icon": "Key" },
+    { "name": "铁纹钥匙", "description": "打开特定上锁的门", "location": "城堡特定区域", "icon": "Key" },
+    { "name": "曲柄", "description": "操作机械装置，放下吊桥", "location": "贝内文托府邸后", "icon": "Key" },
+    { "name": "钥匙模具", "description": "制作特定钥匙", "location": "水库、工厂", "icon": "Key" }
+  ],
+  "materials": [
+    { "name": "药草", "description": "绿色药草，恢复少量生命值", "type": "medical" },
+    { "name": "化学液体", "description": "合成药品和弹药的必备材料", "type": "crafting" },
+    { "name": "火药", "description": "制作弹药的普通材料", "type": "crafting" },
+    { "name": "高级火药", "description": "制作高级弹药的稀有材料", "type": "crafting" },
+    { "name": "生锈零件", "description": "制作弹药的常见材料", "type": "crafting" },
+    { "name": "金属废料", "description": "制作爆炸物的材料", "type": "crafting" }
+  ],
+  "treasures": [
+    { "name": "迪米特雷斯库的项链", "value": 50000, "location": "击败迪米特雷斯库夫人", "icon": "Gem" },
+    { "name": "水晶Torso", "value": 25000, "location": "击败迪米特雷斯库女儿", "icon": "Gem" },
+    { "name": "贝伦加里奥的圣杯", "value": 18000, "location": "城堡宝藏", "icon": "Gem" },
+    { "name": "Crystal Dimitrescu", "value": 25000, "location": "迪米特雷斯库夫人掉落", "icon": "Gem" },
+    { "name": "Crystal Moreau", "value": 30000, "location": "莫罗掉落", "icon": "Gem" },
+    { "name": "Crystal Heisenberg", "value": 35000, "location": "海森伯格掉落", "icon": "Gem" }
+  ],
+  "ingredients": [
+    { "name": "兽肉", "type": "meat", "description": "狩猎野生动物获得", "icon": "Beef" },
+    { "name": "禽肉", "type": "meat", "description": "狩猎鸟类获得", "icon": "Bird" },
+    { "name": "鱼肉", "type": "meat", "description": "钓鱼获得", "icon": "Fish" },
+    { "name": "极品禽肉", "type": "rare", "description": "稀有鸟类，藏宝图提示位置", "icon": "Bird" },
+    { "name": "特级兽肉", "type": "rare", "description": "稀有动物，路易莎家后窗", "icon": "Beef" },
+    { "name": "优质鱼肉", "type": "rare", "description": "魔幻鱼，要塞藏宝图位置", "icon": "Fish" }
+  ],
+  "dishes": [
+    { "name": "香烤鲜鱼", "effect": "生命值上限提升", "ingredients": "鱼肉×3", "icon": "Utensils" },
+    { "name": "传统炖肉", "effect": "格挡时伤害降低", "ingredients": "兽肉×4", "icon": "Utensils" },
+    { "name": "禽肉料理", "effect": "移动速度提升", "ingredients": "禽肉×3", "icon": "Utensils" },
+    { "name": "极品三肉拼盘", "effect": "大幅生命值上限提升", "ingredients": "极品禽肉 + 特级兽肉 + 优质鱼肉", "icon": "ChefHat" }
+  ]
+}

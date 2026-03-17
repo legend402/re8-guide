@@ -1,67 +1,168 @@
 [
   {
     "id": "lycan",
-    "name": "Lycan",
+    "name": "Lycan（狼人）",
     "category": "普通敌人",
-    "description": "受Cadou寄生虫感染的狼人生物，是村庄中最常见的敌人。速度快，攻击性强，常成群出现。",
-    "weaknesses": ["头部射击", "爆炸物"],
-    "location": "村庄区域",
-    "strategy": "瞄准头部可造成暴击伤害。利用爆炸桶或手雷可快速清理群体。"
+    "description": "受Cadou寄生虫感染的狼人生物，是村庄中最常见的敌人。速度快，攻击性强，常成群出现。会使用武器和攀爬。",
+    "weaknesses": ["头部射击", "爆炸物", "火焰"],
+    "location": "村庄各处",
+    "strategy": "瞄准头部可造成暴击伤害。利用爆炸桶或手雷可快速清理群体。保持距离，避免被包围。"
+  },
+  {
+    "id": "lycan-large",
+    "name": "大型Lycan",
+    "category": "普通敌人",
+    "description": "更高血量和攻击力的狼人，体型更大，威胁更高。",
+    "weaknesses": ["头部射击", "火焰", "霰弹枪"],
+    "location": "村庄要塞区域",
+    "strategy": "使用霰弹枪或马格南造成硬直，然后爆头。"
+  },
+  {
+    "id": "urias",
+    "name": "Uriaș（巨狼）",
+    "category": "小Boss",
+    "description": "小BOSS级别的巨型狼人，体型巨大，血量极高，攻击力惊人。",
+    "weaknesses": ["头部", "爆炸物", "马格南"],
+    "location": "村庄、要塞",
+    "strategy": "集中火力攻击头部，使用爆炸物和马格南快速削减血量。"
   },
   {
     "id": "moroaica",
-    "name": "Moroaica",
+    "name": "Moroaicǎ（吸血女妖）",
     "category": "普通敌人",
-    "description": "城堡中的女性吸血鬼生物，行动敏捷，擅长近战攻击。",
-    "weaknesses": ["头部射击"],
-    "location": "城堡 Dimitrescu",
-    "strategy": "保持移动，避免被包围。使用霰弹枪或手枪爆头。"
+    "description": "城堡中的女性吸血鬼生物，行动敏捷，擅长近战攻击。会飞行和瞬移。",
+    "weaknesses": ["头部射击", "火焰"],
+    "location": "迪米特雷斯库城堡",
+    "strategy": "保持移动，避免被包围。使用霰弹枪或手枪爆头。火焰可造成额外伤害。"
   },
   {
-    "id": "soldat",
+    "id": "samca",
+    "name": "Samca（女巫）",
+    "category": "普通敌人",
+    "description": "释放诅咒的女性敌人，会瞬移和远程攻击。",
+    "weaknesses": ["攻击时暴露弱点", "头部射击"],
+    "location": "城堡、村庄",
+    "strategy": "观察她们的攻击模式，在施法时暴露弱点进行攻击。"
+  },
+  {
+    "id": "soldat-eins",
     "name": "Soldat Eins",
     "category": "普通敌人",
-    "description": "海森伯格工厂中的半机械士兵，配备有机植入物和机械增强。",
+    "description": "海森伯格工厂中的基础机械士兵，配备有机植入物和机械增强。",
     "weaknesses": ["头部射击", "背部散热器"],
     "location": "海森伯格工厂",
-    "strategy": "攻击背部的红色散热器可造成额外伤害。部分型号需要躲避冲刺攻击。"
+    "strategy": "攻击背部的红色散热器可造成额外伤害。"
+  },
+  {
+    "id": "soldat-zwei",
+    "name": "Soldat Zwei",
+    "category": "普通敌人",
+    "description": "强化版机械士兵，装甲更厚，更难对付。",
+    "weaknesses": ["背部散热器", "爆炸物"],
+    "location": "海森伯格工厂深层",
+    "strategy": "必须使用爆炸物或攻击背部散热器才能有效伤害。"
+  },
+  {
+    "id": "soldat-jet",
+    "name": "Soldat Jet",
+    "category": "普通敌人",
+    "description": "喷射飞行型机械士兵，机动性强。",
+    "weaknesses": ["背部散热器", "狙击枪"],
+    "location": "海森伯格工厂",
+    "strategy": "预判飞行轨迹，使用狙击枪精准打击。"
+  },
+  {
+    "id": "sturm",
+    "name": "Sturm",
+    "category": "普通敌人",
+    "description": "电钻兵，冲锋攻击非常危险。",
+    "weaknesses": ["背部散热器"],
+    "location": "海森伯格工厂",
+    "strategy": "躲避冲锋后攻击背部散热器。"
+  },
+  {
+    "id": "varcolac",
+    "name": "Vârcolac（狼人王）",
+    "category": "小Boss",
+    "description": "巨型狼人BOSS，人形时弱点暴露。",
+    "weaknesses": ["人形时弱点", "马格南"],
+    "location": "村庄教堂",
+    "strategy": "等待它变回人形时集中火力攻击弱点。"
+  },
+  {
+    "id": "baby",
+    "name": "Baby（婴儿怪）",
+    "category": "特殊敌人",
+    "description": "贝内文托府邸专属恐怖敌人，无法击杀，只能躲避。巨大的畸形婴儿，听到声音会追踪玩家。",
+    "weaknesses": ["无法击杀"],
+    "location": "贝内文托府邸地下室",
+    "strategy": "只能躲避，利用柜子和缝隙藏身。不要发出声音，慢慢移动。"
+  },
+  {
+    "id": "daughters",
+    "name": "三位女儿（Bela/Cassandra/Daniela）",
+    "category": "Boss",
+    "description": "迪米特雷斯库夫人的三个女儿：贝拉、卡桑德拉、丹妮拉。能化为虫群，物理免疫。",
+    "weaknesses": ["毒匕首", "寒冷"],
+    "location": "迪米特雷斯库城堡",
+    "strategy": "使用毒匕首迫使她们现形，然后攻击人形部分。引导她们到寒冷区域或破窗让冷风吹入。",
+    "rewards": ["击败后获得钥匙"]
   },
   {
     "id": "dimitrescu",
     "name": "迪米特雷斯库夫人",
     "category": "Boss",
-    "description": "四大贵族之一的吸血鬼夫人，拥有超人的力量和再生能力。",
-    "weaknesses": ["狙击步枪", "城堡外的寒冷"],
+    "description": "四大贵族之一的吸血鬼夫人，身高约2.9米，拥有超人的力量和再生能力。游戏的标志性角色。",
+    "weaknesses": ["狙击步枪", "城堡外的寒冷", "毒匕首"],
     "location": "城堡 Dimitrescu 塔楼",
-    "strategy": "第一阶段躲避追击，利用城堡结构周旋。最终战在塔楼顶部，使用狙击步枪射击头部。注意她的冲锋攻击。",
-    "rewards": ["Crystal Dimitrescu", "25,000 Lei"]
+    "strategy": "第一阶段躲避追击，利用城堡结构周旋。使用毒匕首攻击人形部分。最终战在塔楼顶部，使用狙击步枪射击头部。注意她的冲锋攻击。",
+    "rewards": ["Crystal Dimitrescu", "25,000 Lei", "双翼胎儿玻璃瓶"]
   },
   {
-    "id": "moreau-boss",
+    "id": "donna",
+    "name": "多娜·贝内文托",
+    "category": "Boss",
+    "description": "四大贵族之一，戴着黑色面纱的神秘女性。能够操控人偶安吉，擅长心理恐怖和幻觉攻击。",
+    "weaknesses": ["刺击安吉"],
+    "location": "贝内文托府邸",
+    "strategy": "恐怖解谜关卡。找到并刺击人偶安吉三次即可击败她。注意躲避Baby。",
+    "rewards": ["击败后获得钥匙", "双翼胎儿玻璃瓶"]
+  },
+  {
+    "id": "moreau",
     "name": "莫罗",
     "category": "Boss",
     "description": "变异成巨大鱼形怪物的四大贵族，能在水中快速移动并喷射酸液。",
-    "weaknesses": ["爆炸物", "嘴部"],
+    "weaknesses": ["爆炸物", "嘴部", "人形本体"],
     "location": "莫罗水库",
-    "strategy": "利用地雷和手雷打断他的攻击。当他张开嘴时集中火力射击。保持移动避免酸液攻击。",
-    "rewards": ["Crystal Moreau", "30,000 Lei"]
+    "strategy": "利用地雷和手雷打断他的攻击。当他张开嘴时集中火力射击。等待人形本体出现时猛烈攻击。保持移动避免酸液攻击。",
+    "rewards": ["Crystal Moreau", "30,000 Lei", "双翼胎儿玻璃瓶", "M1851狼毒"]
   },
   {
-    "id": "heisenberg-boss",
+    "id": "heisenberg",
     "name": "海森伯格",
     "category": "Boss",
-    "description": "操控磁场的工程师，驾驶着巨型机械怪物与你战斗。",
-    "weaknesses": ["坦克炮", "背部弱点"],
+    "description": "操控磁场的疯狂工程师，驾驶着巨型机械怪物与你战斗。对米兰达母亲怀有叛意。",
+    "weaknesses": ["坦克炮", "背部弱点", "红色发光区域"],
     "location": "海森伯格工厂",
     "strategy": "使用提供的坦克装甲车，利用磁力炮攻击他暴露在外的红色弱点区域。躲避他的锯片和磁场攻击。",
-    "rewards": ["Crystal Heisenberg", "35,000 Lei"]
+    "rewards": ["Crystal Heisenberg", "35,000 Lei", "双翼胎儿玻璃瓶"]
+  },
+  {
+    "id": "urias-drac",
+    "name": "Uriaș Drac（巨龙守卫）",
+    "category": "小Boss",
+    "description": "巨大小BOSS，守卫要塞入口。",
+    "weaknesses": ["头部", "马格南"],
+    "location": "要塞",
+    "strategy": "集中火力攻击头部，使用最强武器。"
   },
   {
     "id": "miranda",
     "name": "米兰达母亲",
     "category": "最终Boss",
-    "description": "游戏最终Boss，能够变换多种形态的强大敌人。",
-    "weaknesses": ["所有武器", "闪光弹"],
+    "description": "游戏最终Boss，村庄的邪教领袖，能够变换多种形态的强大敌人。为了复活死去的女儿伊娃而绑架了罗斯。",
+    "weaknesses": ["所有武器", "闪光弹", "观察各形态弱点"],
     "location": "仪式地点",
     "strategy": "多阶段战斗，每阶段变换形态。使用所有可用弹药，当房间变暗时使用闪光弹。最终阶段克里斯会提供支援。",
     "rewards": ["通关", "奖励武器解锁"]

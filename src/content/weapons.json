@@ -3,88 +3,179 @@
     "id": "lemi",
     "name": "LEMI",
     "type": "handgun",
-    "description": "初始手枪，性能均衡",
+    "description": "初始手枪，性能均衡，适合各种战斗场景",
     "power": 100,
     "rateOfFire": 0.45,
     "reloadSpeed": 2.7,
     "ammoCapacity": 10,
-    "location": "初始装备"
+    "location": "初始装备（游戏开始自动获得）",
+    "attachments": ["补偿器", "高容量弹夹"],
+    "upgradeCost": 76500,
+    "infiniteUnlock": 10000
   },
   {
     "id": "m1911",
     "name": "M1911",
     "type": "handgun",
-    "description": "威力更大的手枪选择",
+    "description": "威力更大的手枪选择，射速较快",
     "power": 170,
-    "rateOfFire": 0.2,
+    "rateOfFire": 0.35,
     "reloadSpeed": 2.0,
-    "ammoCapacity": 23,
-    "location": "城堡 Dimitrescu"
+    "ammoCapacity": 12,
+    "location": "工坊房间，密码070408"
+  },
+  {
+    "id": "v61",
+    "name": "V61 Custom",
+    "type": "handgun",
+    "description": "冲锋手枪，全自动射击模式",
+    "power": 190,
+    "rateOfFire": 0.28,
+    "reloadSpeed": 1.8,
+    "ammoCapacity": 25,
+    "location": "海森伯格工厂，公爵商店"
+  },
+  {
+    "id": "usm-ai",
+    "name": "USM-AI",
+    "type": "handgun",
+    "description": "克里斯专属手枪，性能优异",
+    "power": 190,
+    "rateOfFire": 0.3,
+    "reloadSpeed": 1.5,
+    "ammoCapacity": 20,
+    "location": "佣兵模式解锁（20,000 CP）"
+  },
+  {
+    "id": "dragoon",
+    "name": "龙击",
+    "type": "handgun",
+    "description": "克里斯专属武器，威力强大",
+    "power": 300,
+    "rateOfFire": 0.25,
+    "reloadSpeed": 1.8,
+    "ammoCapacity": 30,
+    "location": "克里斯篇章获得"
   },
   {
     "id": "m1897",
     "name": "M1897",
     "type": "shotgun",
-    "description": "可靠的霰弹枪",
-    "power": 560,
+    "description": "可靠的泵动式霰弹枪，近距离威力巨大",
+    "power": 850,
     "rateOfFire": 1.5,
     "reloadSpeed": 3.7,
     "ammoCapacity": 5,
-    "location": "村庄 - 东旧城区"
+    "location": "首次狼人袭击时的屋子"
   },
   {
     "id": "w870-tac",
     "name": "W870 TAC",
     "type": "shotgun",
-    "description": "泵动式霰弹枪",
-    "power": 800,
+    "description": "泵动式霰弹枪，威力更强",
+    "power": 1000,
     "rateOfFire": 1.2,
     "reloadSpeed": 3.2,
     "ammoCapacity": 7,
-    "location": "城堡 Dimitrescu"
-  },
-  {
-    "id": "f2-rifle",
-    "name": "F2 Rifle",
-    "type": "rifle",
-    "description": "精准狙击步枪",
-    "power": 200,
-    "rateOfFire": 1.8,
-    "reloadSpeed": 2.5,
-    "ammoCapacity": 4,
-    "location": "城堡 Dimitrescu"
-  },
-  {
-    "id": "wolfsbane",
-    "name": "M1851 Wolfsbane",
-    "type": "magnum",
-    "description": "高威力马格南手枪",
-    "power": 1500,
-    "rateOfFire": 1.2,
-    "reloadSpeed": 3.5,
-    "ammoCapacity": 5,
-    "location": "莫罗水库"
+    "location": "击败唐娜后返回村庄途中"
   },
   {
     "id": "syg-12",
     "name": "SYG-12",
     "type": "shotgun",
-    "description": "半自动霰弹枪，后期强力武器",
-    "power": 1760,
+    "description": "半自动霰弹枪，后期强力武器，射速快",
+    "power": 1200,
     "rateOfFire": 1.1,
     "reloadSpeed": 3.0,
     "ammoCapacity": 10,
-    "location": "公爵商店（后期）"
+    "location": "海森伯格工厂，公爵商店"
+  },
+  {
+    "id": "f2-rifle",
+    "name": "F2 狙击步枪",
+    "type": "rifle",
+    "description": "精准狙击步枪，适合远距离作战",
+    "power": 350,
+    "rateOfFire": 1.8,
+    "reloadSpeed": 2.5,
+    "ammoCapacity": 4,
+    "location": "迪米特雷斯库城堡阁楼"
+  },
+  {
+    "id": "wcx",
+    "name": "WCX",
+    "type": "rifle",
+    "description": "突击步枪，适合中距离战斗",
+    "power": 250,
+    "rateOfFire": 0.12,
+    "reloadSpeed": 2.0,
+    "ammoCapacity": 30,
+    "location": "克里斯篇章获得"
+  },
+  {
+    "id": "wolfsbane",
+    "name": "M1851 Wolfsbane",
+    "type": "magnum",
+    "description": "高威力马格南手枪，对付Boss的利器",
+    "power": 1400,
+    "rateOfFire": 1.2,
+    "reloadSpeed": 3.5,
+    "ammoCapacity": 5,
+    "location": "击败莫罗后，风车旁研究室"
+  },
+  {
+    "id": "stake",
+    "name": "S.T.A.K.E.",
+    "type": "magnum",
+    "description": "最强马格南手枪，佣兵模式奖励",
+    "power": 1500,
+    "rateOfFire": 1.0,
+    "reloadSpeed": 3.0,
+    "ammoCapacity": 6,
+    "location": "佣兵模式解锁后购买"
   },
   {
     "id": "gm79",
     "name": "GM 79",
     "type": "special",
-    "description": "榴弹发射器",
+    "description": "榴弹发射器，范围伤害武器",
     "power": 3000,
     "rateOfFire": 1.5,
     "reloadSpeed": 2.8,
     "ammoCapacity": 1,
-    "location": "海森伯格工厂"
+    "location": "水车旁用铁纹钥匙开门"
+  },
+  {
+    "id": "rocket-pistol",
+    "name": "Rocket Pistol",
+    "type": "special",
+    "description": "火箭手枪，爆炸性威力",
+    "power": 5000,
+    "rateOfFire": 2.0,
+    "reloadSpeed": 3.0,
+    "ammoCapacity": 1,
+    "location": "佣兵模式SSS评价奖励"
+  },
+  {
+    "id": "handcannon",
+    "name": "LZ解答者",
+    "type": "magnum",
+    "description": "终极武器，无限弹药马格南",
+    "power": 2500,
+    "rateOfFire": 0.8,
+    "reloadSpeed": 2.5,
+    "ammoCapacity": 99,
+    "location": "村庄阴影难度通关奖励"
+  },
+  {
+    "id": "knife",
+    "name": "小刀",
+    "type": "melee",
+    "description": "近战武器，无限使用",
+    "power": 50,
+    "rateOfFire": 0.1,
+    "reloadSpeed": 0,
+    "ammoCapacity": 0,
+    "location": "剧情自动获得"
   }
 ]

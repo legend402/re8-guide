@@ -1,0 +1,26 @@
+{
+  "stages": [
+    { "id": 1, "name": "村庄", "difficulty": "入门", "unlock": "初始解锁", "enemies": "Lycan为主", "recommendation": "熟悉连击系统" },
+    { "id": 2, "name": "城堡", "difficulty": "中等", "unlock": "A级评价解锁", "enemies": "Moroaicǎ为主", "recommendation": "利用地形优势" },
+    { "id": 3, "name": "工厂", "difficulty": "困难", "unlock": "A级评价解锁", "enemies": "Soldat为主", "recommendation": "瞄准弱点攻击" },
+    { "id": 4, "name": "疯狂村庄", "difficulty": "极难", "unlock": "A级评价解锁", "enemies": "混合敌人", "recommendation": "保持移动" },
+    { "id": 5, "name": "村庄 II", "difficulty": "困难", "unlock": "B级评价解锁", "enemies": "强化Lycan", "recommendation": "优先击杀精英" },
+    { "id": 6, "name": "城堡 II", "difficulty": "极难", "unlock": "B级评价解锁", "enemies": "强化Moroaicǎ", "recommendation": "控制连击数" },
+    { "id": 7, "name": "工厂 II", "difficulty": "专家", "unlock": "B级评价解锁", "enemies": "精英Soldat", "recommendation": "利用能力球" },
+    { "id": 8, "name": "疯狂村庄 II", "difficulty": "专家", "unlock": "B级评价解锁", "enemies": "Boss级敌人", "recommendation": "完美连击" }
+  ],
+  "ranks": [
+    { "rank": "SSS", "score": "最高", "color": "text-yellow-500", "bgColor": "bg-yellow-500/10", "requirement": "连击150+" },
+    { "rank": "SS", "score": "非常高", "color": "text-amber-500", "bgColor": "bg-amber-500/10", "requirement": "连击100+" },
+    { "rank": "S", "score": "高", "color": "text-orange-500", "bgColor": "bg-orange-500/10", "requirement": "连击70+" },
+    { "rank": "A", "score": "良好", "color": "text-green-500", "bgColor": "bg-green-500/10", "requirement": "连击50+" },
+    { "rank": "B", "score": "一般", "color": "text-blue-500", "bgColor": "bg-blue-500/10", "requirement": "连击30+" },
+    { "rank": "C", "score": "及格", "color": "text-gray-500", "bgColor": "bg-gray-500/10", "requirement": "完成关卡" }
+  ],
+  "abilities": [
+    { "name": "快刀斩乱麻", "effect": "近战攻击速度提升", "icon": "Zap" },
+    { "name": "神射手", "effect": "枪械威力提升", "icon": "Target" },
+    { "name": "健步如飞", "effect": "移动速度提升", "icon": "Flame" },
+    { "name": "铁壁", "effect": "受到的伤害减少", "icon": "Award" }
+  ]
+}
