@@ -40,5 +40,5 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   },
-  "homepage": "https://yangjing-han.github.io/re8-guide"
+  "homepage": "https://re8-guide.vercel.app"
 }
