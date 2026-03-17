@@ -10,10 +10,19 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section with animated background */}
+      {/* Hero Section with game background */}
       <section className="relative py-20 lg:py-32 px-4 overflow-hidden">
-        {/* Animated gradient background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-amber-950/30 via-background to-red-950/20" />
+        {/* Game background image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url('/images/rev-promo-art.jpg')` }}
+        />
+        
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black/60" />
+        
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-950/40 via-background/80 to-red-950/40" />
         
         {/* Animated particles/lines */}
         <div className="absolute inset-0 overflow-hidden">

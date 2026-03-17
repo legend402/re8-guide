@@ -3,6 +3,7 @@
 import { Users, Skull, UserCheck, Ghost } from "lucide-react"
 import characters from "@/content/characters.json"
 import { useHighlightOnLoad } from "@/hooks/use-highlight"
+import Image from "next/image"
 
 const roleIcons: Record<string, React.ReactNode> = {
   "主角": <UserCheck className="h-4 w-4" />,
@@ -47,20 +48,22 @@ export default function CharactersPage() {
             className="group bg-card rounded-xl border border-border overflow-hidden hover:border-amber-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/5 hover:-translate-y-1 scroll-mt-24"
           >
             {/* Character Visual */}
-            <div className="relative h-40 bg-gradient-to-br from-muted to-background overflow-hidden">
-              {/* Background Pattern */}
-              <div className="absolute inset-0 opacity-10">
-                <div className="absolute inset-0" style={{
-                  backgroundImage: `radial-gradient(circle at 2px 2px, currentColor 1px, transparent 0)`,
-                  backgroundSize: '16px 16px'
-                }} />
-              </div>
-              
-              {/* Character Icon */}
+            <div className="relative h-48 bg-gradient-to-br from-muted to-background overflow-hidden">
+              {/* Character Image */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-amber-500/20 to-red-500/20 flex items-center justify-center">
-                  <Users className="h-10 w-10 text-muted-foreground/50" />
-                </div>
+                {character.image ? (
+                  <Image
+                    src={character.image}
+                    alt={character.name}
+                    width={200}
+                    height={180}
+                    className="object-contain max-h-44 w-auto drop-shadow-xl group-hover:scale-105 transition-transform duration-300"
+                  />
+                ) : (
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-amber-500/20 to-red-500/20 flex items-center justify-center">
+                    <Users className="h-10 w-10 text-muted-foreground/50" />
+                  </div>
+                )}
               </div>
               
               {/* Gradient Overlay */}

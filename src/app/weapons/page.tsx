@@ -4,6 +4,7 @@ import weapons from "@/content/weapons.json"
 import { Sword, Crosshair, Zap, Timer, Package, Target } from "lucide-react"
 import { useHighlightOnLoad } from "@/hooks/use-highlight"
 import { weaponTypeColors, weaponTypeNames } from "@/data/weapons"
+import Image from "next/image"
 
 const weaponTypeIcons: Record<string, React.ReactNode> = {
   handgun: <Target className="h-5 w-5" />,
@@ -12,6 +13,26 @@ const weaponTypeIcons: Record<string, React.ReactNode> = {
   magnum: <Zap className="h-5 w-5" />,
   special: <Package className="h-5 w-5" />,
   melee: <Sword className="h-5 w-5" />,
+}
+
+// 武器图片文件名映射
+const weaponImageMap: Record<string, string> = {
+  "lemi": "lemi.png",
+  "m1911": "m1911.png",
+  "v61": "v61.png",
+  "usm-ai": "usm-ai.png",
+  "dragoon": "dragoon.png",
+  "m1897": "m1897.png",
+  "w870-tac": "w870-tac.png",
+  "syg-12": "syg-12.png",
+  "f2-rifle": "f2-rifle.png",
+  "wcx": "wcx.png",
+  "wolfsbane": "wolfsbane.png",
+  "stake": "stake.png",
+  "gm79": "gm79.png",
+  "rocket-pistol": "rocket-pistol.png",
+  "handcannon": "handcannon.png",
+  "knife": "knife.png",
 }
 
 export default function WeaponsPage() {
@@ -97,6 +118,21 @@ function WeaponSection({ title, type, weapons }: { title: string; type: string; 
             id={weapon.id}
             className="group bg-card rounded-xl border border-border overflow-hidden hover:border-amber-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/5 hover:-translate-y-1 scroll-mt-24"
           >
+            {/* Weapon Image */}
+            <div className="relative h-40 bg-black from-muted/50 to-muted flex items-center justify-center overflow-hidden">
+              {weaponImageMap[weapon.id] ? (
+                <Image
+                  src={`/images/weapons/${weaponImageMap[weapon.id]}`}
+                  alt={weapon.name}
+                  width={200}
+                  height={120}
+                  className="object-contain max-h-32 w-auto drop-shadow-lg group-hover:scale-105 transition-transform duration-300"
+                />
+              ) : (
+                <div className="text-6xl opacity-20">🔫</div>
+              )}
+            </div>
+
             {/* Header */}
             <div className={`p-4 border-b ${weaponTypeColors[type] || 'bg-amber-500/10 text-amber-500 border-amber-500/30'}`}>
               <div className="flex items-center justify-between">
