@@ -155,6 +155,60 @@
   --chart-5: var(--accent-gold-light);
 }
 
+.light {
+  /* Background Colors */
+  --background: #F5F5F5;
+  --background-secondary: #FFFFFF;
+  --background-tertiary: #E8E8E8;
+
+  /* Text Colors */
+  --foreground: #1A1A1A;
+  --foreground-secondary: rgba(0, 0, 0, 0.6);
+  --foreground-tertiary: rgba(0, 0, 0, 0.4);
+
+  /* Accent Colors */
+  --accent-blood: #B91C1C;
+  --accent-blood-light: #DC2626;
+  --accent-ice: #2563EB;
+  --accent-gold: #CA8A04;
+  --accent-gold-light: #EAB308;
+  --accent-forest: #15803D;
+
+  /* Semantic Colors */
+  --primary: var(--background-secondary);
+  --primary-foreground: var(--foreground);
+  --secondary: var(--background-tertiary);
+  --secondary-foreground: var(--foreground);
+  --muted: var(--background-tertiary);
+  --muted-foreground: var(--foreground-secondary);
+  --accent: var(--accent-blood);
+  --accent-foreground: #FFFFFF;
+  --destructive: var(--accent-blood-light);
+  --border: rgba(0, 0, 0, 0.1);
+  --input: rgba(0, 0, 0, 0.1);
+  --ring: var(--accent-gold-light);
+  --card: var(--background-secondary);
+  --card-foreground: var(--foreground);
+  --popover: var(--background-secondary);
+  --popover-foreground: var(--foreground);
+  --radius: 0.625rem;
+  --sidebar: var(--background-secondary);
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--accent-gold-light);
+  --sidebar-primary-foreground: var(--foreground);
+  --sidebar-accent: var(--background-tertiary);
+  --sidebar-accent-foreground: var(--foreground);
+  --sidebar-border: rgba(0, 0, 0, 0.1);
+  --sidebar-ring: var(--accent-gold-light);
+
+  /* Chart Colors */
+  --chart-1: var(--accent-gold);
+  --chart-2: var(--accent-ice);
+  --chart-3: var(--accent-blood);
+  --chart-4: var(--accent-forest);
+  --chart-5: var(--accent-gold-light);
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
